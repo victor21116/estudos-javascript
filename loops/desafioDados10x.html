@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Jogue dois dados, ate que o número de vezes que a soma dos dois seja = 10, !</h1>
+    <h2>*** Sem somar se os dados forem iguais </h2>
+    <script>
+        
+        let pares = 0
+        let tentativas  = 0
+        while(true){
+            
+            let dados1 = parseInt(Math.random() * 6 + 1)
+            let dados2 = parseInt(Math.random() * 6 + 1)
+            console.log(dados1, dados2, tentativas, pares)
+            
+            if(dados1 === dados2){
+                continue
+            }
+
+            tentativas++
+            console.log("Quantidade de vezes q rodou: " + tentativas)
+            
+            console.log(dados1 + " + " + dados2 +  " = " + (dados1+dados2))
+
+            
+            if((dados1 + dados2)%2 === 0){
+                pares ++
+            }
+            if(pares === 10){
+                break
+            }
+    
+        }
+        console.log( "Fora do loop! <br> Número de tentativas: " + tentativas)
+
+
+    </script>
+</body>
+</html>
