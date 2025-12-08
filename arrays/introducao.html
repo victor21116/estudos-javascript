@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <script>
+        let nomes = ["João", "Maria", "José"] // sintaxe literal
+
+        let nomes2 = new Array("João", "Maria", "José", "Victor") // sintaxe função construtora 
+        console.log(nomes)
+
+        let nomeDigitado = prompt("Digite seu nome: ")
+        nomes2[nomes2.length] = nomeDigitado
+        for(let i = 0; i < nomes2.length; i ++){
+            document.write("Nome: " + nomes2[i] + "<br>")
+            
+        }
+        document.write("<br>A lista de nomes possui " + nomes2.length + " elementos")
+    </script>
+    
+</body>
+</html>
