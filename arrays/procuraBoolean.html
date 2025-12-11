@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Procura no array</h1>
+    <script>
+        let array = ["oi ",10 , null, "string", undefined, true]
+        let alerta = false
+        for(let i = 0; i < array.length; i++){
+            if(array[i] === null){
+                document.write("Null encontrado na posição: " + i)
+                alerta = true
+                break
+            }
+        }
+        alert("O array possui algum elemento null, undefined ou NaN: " + alerta)
+    </script>
+</body>
+</html>
